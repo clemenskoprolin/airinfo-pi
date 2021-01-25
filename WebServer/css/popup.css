@@ -1,0 +1,58 @@
+.popupButton {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popup {
+    background-color: white;
+    z-index: 1;
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 80vh;
+    width: 80%;
+
+    border: 0.1em solid rgb(226, 226, 226);
+
+    visibility: hidden;
+}
+
+.popupContent {
+    margin: 2em;
+}
+
+.popupCloseButton {
+    cursor: pointer;
+
+    display: block;
+
+    padding: 0.4em;
+
+    height: 2.5em;
+    width: 2.5em;
+
+    float: right;
+}
+
+@keyframes showPopupAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hidePopupAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

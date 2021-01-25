@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "WorkSans";
+    src: url("/fonts/WorkSans/WorkSans.ttf") format("truetype");
+    font-display: swap;
+}
+
+body {
+    margin: 0em;
+    overflow-x: hidden;
+}
+
+p, h1, h2, h3, h4, h5, h6, b {
+    font-family: "WorkSans", sans-serif;
+    margin: 0em;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 250;
+}
+
+h2 {
+    font-size: 70px;
+    font-weight: 280;
+}
+
+h3 {
+    font-size: 35px; 
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 30px; 
+    font-weight: 300; 
+}
+
+p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+button>p {
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+
+#hintergrundBild p, #hintergrundBild h1, #hintergrundBild h2, #hintergrundBild h3, #hintergrundBild h4, #hintergrundBild h5, #hintergrundBild h6 {
+    /*color: white;*/
+}
+
+#hintergrundBild {
+    background-color: rgb(219, 219, 219);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    
+    height: 80vh;
+    display: flex;
+    flex-flow: column;
+
+    transition: background-image 0.2s ease-in-out;
+}
+
+.bild1 {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('images/Kuehl.jpg') !important;
+}
+
+.bild2 {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('images/EtwasKuehler.jpg') !important;
+}
+
+.bild3 {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('images/Normal.jpg') !important;
+}
+
+.bild4 {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('images/EtwasWaermer.jpg') !important;
+}
+
+.bild5 {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('images/Warm.jpg') !important;
+}
+
+#hintergrundBild>div {
+    opacity: 100%;
+}
+
+#statusleiste {
+    margin: 0.5em 0.5em 0em 0.5em;
+
+    display: flex;
+    align-items: center;
+}
+
+#status {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+#statusPunkt {
+    opacity: 0%;
+    background-color: black;
+
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+
+    margin: 0em 0.1em;
+
+    animation: statusPunktAktualisieren 1s;
+}
+
+@keyframes statusPunktAktualisieren {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+#uhrzeit {
+    display: inline-block;
+}
+
+#hauptinfos {
+    flex-grow : 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+#hauptinfos>div>h1,#hauptinfos>div {
+    width: 100%;
+}
+
+#hauptinfos>div>h1,#hauptinfos>div>h2,#hauptinfos>div>h3,#hauptinfos>div>h4,#hauptinfos>div>p {
+    width: 100%;
+    text-align: center;
+}
+
+#hauptinfos>div:first-child {
+    margin-bottom: -15vh;
+}
+
+#hauptinfos>div:last-child {
+    margin-top: -15vh;
+}
+
+#verlauf {
+    margin-top: -8vh;
+    height: 8vh;
+
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 100%);
+}
+
+#diagramme>h3 {
+    text-align: center;
+}
+
+#diagramme>div {
+    display: flex;
+}
+
+#diagramme>div>div {
+    display: inline-block;
+
+    width: 50%;
+    height: 40vh;
+}
+
+#diagramme>div:first-of-type {
+    margin-bottom: 5em;
+}
+
+#diagramme>div>div>h4, #diagramme>div>div>p {
+    text-align: center;
+}
+
+#diagramme>div>div>button {
+    position: relative;
+    top: 3em;
+    left: 5.05em;
+
+    padding: 0.3em 0.4em;
+
+    background-color: white;
+
+    border: 0.1em solid black;
+    border-radius: 2rem;
+}
+
+#diagramme>div>div>button:hover {
+    background-color: rgb(236, 236, 236);
+    transition: background-color 0.2s;
+}
+
+#quellenPopup {
+    padding: 1.5em;
+}
+
+footer {
+    margin-top: 2em;
+    padding: 1.5em 0em;
+}
+
+footer>p {
+    text-align: center;
+}

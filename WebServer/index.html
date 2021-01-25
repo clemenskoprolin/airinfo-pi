@@ -1,0 +1,95 @@
+<!doctype html>
+<html lan="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="css/popup.css">
+
+        <script type="text/javascript" src="scripts/Chart.bundle.js"></script>
+        <script type="text/javascript" src="scripts/chartjs-plugin-zoom.js"></script>
+        <script type="text/javascript" src="scripts/popup.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+
+        <title>Raumluft Infos</title>
+    </head>
+    <body>
+        <article id="hintergrundBild">
+            <div id="statusleiste">
+                <p id="uhrzeit">00:00 - Gute Nacht</p>
+                <div id="status">
+                    <span id="statusPunkt"></span>
+                    <p id="statusText">Verbinden ...</p>
+                </div>
+            </div>
+            <div id="hauptinfos">
+                <div>
+                    <h1 id="hauptTemperatur">00,00 °C</h1>
+                    <h3 id="temperaturStatusText">Etwas warm</h3>
+                </div>
+                <div>
+                    <h4>Luftdruck</h4>
+                    <h2 id="hauptLuftdruck">0000,0 mPh</h2>
+                    <h3 id="luftdruckStatusText">&rightarrow; gleichbleibend</h3>
+                </div>
+            </div>
+        </article>
+
+        <article id="verlauf"></article>
+
+        <article id="diagramme">
+            <h3>Letzte Woche</h3>
+            <div id="wochenDigrammContainer">
+                <div>
+                    <h4>Temperatur</h4>
+                    <p id="temperaturDiagrammStatus">&rightarrow; gleichbleibend</p>
+                    <button onclick="wochenTemperaturZoomReset()"><p>Zoom zurücksetzen</p></button>
+                    <canvas id="wochenTemperaturDiagramm"></canvas>
+                </div>
+                <div>
+                    <h4>Luftdruck</h4>
+                    <p id="luftdruckDiagrammStatus">&rightarrow; gleichbleibend</p>
+                    <button onclick="wochenLuftdruckZoomReset()"><p>Zoom zurücksetzen</p></button>
+                    <canvas id="wochenLuftdruckDiagramm"></canvas>
+                </div>
+            </div>
+
+            <h3>Insgesamt</h3>
+            <div>
+                <div>
+                    <h4>Temperatur</h4>
+                    <button onclick="insgesamtTemperaturZoomReset()"><p>Zoom zurücksetzen</p></button>
+                    <canvas id="insgesamtTemperaturDiagramm"></canvas>
+                </div>
+                <div>
+                    <h4>Luftdruck</h4>
+                    <button onclick="insgesamtLuftdruckZoomReset()"><p>Zoom zurücksetzen</p></button>
+                    <canvas id="insgesamtLuftdruckDiagramm"></canvas>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <p class="popupButton" id="quellenPopupButton">Quellen der benutzten APIs und Bildquellen</p>
+            <p><a href="https://clemenskoprolin.com">2021 Clemens Koprolin</a></p>
+        </footer>
+
+        <div class="popup" id="quellenPopup">
+            <img class="popupCloseButton" src="images/schliessen.svg" alt="Schließen">
+            <h4>Benutzte Bilder:</h4>
+            <ul>
+                <li><p><a href="https://pixabay.com/de/photos/tee-teetasse-gr%C3%BCntee-dampf-1887042/">Tee Tassen Foto</a> - <a href="https://pixabay.com/de/service/license/">Pixabay Lizenz</a></p></li>
+                <li><p><a href="https://pxhere.com/en/photo/1515909">Pflanzen Foto</a> - <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</a></p></li>
+                <li><p><a href="https://pixabay.com/de/photos/eiszapfen-schnee-bokeh-winter-3888363/">Eiszapfen Foto</a> - <a href="https://pixabay.com/de/service/license/">Pixabay Lizenz</a></p></li>
+                <li><p><a href="https://pixabay.com/de/photos/feuer-lagerfeuer-flamme-glut-5026100/">Lagerfeuer Foto</a> - <a href="https://pixabay.com/de/service/license/">Pixabay Lizenz</a></p></li>
+                <li><p><a href="https://pixabay.com/de/photos/thermostat-heizung-heizk%C3%B6rper-250556/">Heizung Foto</a> - <a href="https://pixabay.com/de/service/license/">Pixabay Lizenz</a></p></li>
+            </ul>
+
+            <h4>Benutze APIs:</h4>
+            <ul>
+                <li><p><a href="https://www.chartjs.org/">Chart.js</a> - <a href="https://github.com/chartjs/Chart.js/blob/master/LICENSE.md">MIT License</a></p></li>
+                <li><p><a href="https://github.com/chartjs/chartjs-plugin-zoom">chartjs-plugin-zoom</a> - <a href="https://github.com/chartjs/chartjs-plugin-zoom/blob/master/LICENSE.md">MIT License</a></p></li>
+            </ul>
+        </div>
+    </body>
+</html>
