@@ -1,0 +1,6 @@
+These blueprints were made with open-source software Fritzing.
+website: https://fritzing.org/ - license: GNU GPL v3 (https://github.com/fritzing/fritzing-app/blob/develop/LICENSE.GPL3) - GitHub: https://github.com/fritzing/fritzing-app
+
+Some additional parts were used as well:
+"KY-009 RGB Full color LED SMD Module" by Arduino Modules - https://arduinomodules.info/ky-009-rgb-full-color-led-smd-module/
+"Nokia 5110 LCD display" by hauska - https://forum.fritzing.org/t/nokia-5110-lcd-display/2416
