@@ -1,4 +1,4 @@
-These blueprints were made with open-source software Fritzing.
+These blueprints were made with the open-source software Fritzing.
 website: https://fritzing.org/ - license: GNU GPL v3 (https://github.com/fritzing/fritzing-app/blob/develop/LICENSE.GPL3) - GitHub: https://github.com/fritzing/fritzing-app
 
 Some additional parts were used as well:

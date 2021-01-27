@@ -12,7 +12,7 @@ To find out what you need to run this project on your Raspberry Pi, consider tak
 
 <img width="600px" src="images/device/device.jpg" alt="Design of the finished indoor air measuring device">
 
-### Additonal information
+### Additional information
 The project is written in Python, HTML, CSS, JavaScript, PHP and MySQL with the help of these amazing tools.
 
 Python:
@@ -25,6 +25,7 @@ Python:
 Website:
 - [chart.js](https://www.chartjs.org/) by Chart.js Contributors - Copyright (c) 2018 Chart.js Contributors - [MIT License](https://github.com/chartjs/Chart.js/blob/master/LICENSE.md)
 - [chartjs-plugin-zoom](https://github.com/chartjs/chartjs-plugin-zoom) by Nick Downie - Copyright (c) 2013-2016 Nick Downie - [MIT License](https://github.com/chartjs/chartjs-plugin-zoom/blob/master/LICENSE.md)
+- [Work Sans](https://github.com/weiweihuanghuang/Work-Sans) by Work Sans Project Authors - Copyright 2019 The Work Sans Project Authors - [SIL Open Font License 1.1](https://github.com/weiweihuanghuang/Work-Sans/blob/master/OFL.txt)
 - [Tee Tassen Foto](https://pixabay.com/de/photos/tee-teetasse-gr%C3%BCntee-dampf-1887042/) by TeeFarm - [Pixabay License](https://pixabay.com/service/license/)
 - [Pflanzen Foto](https://pxhere.com/en/photo/1515909) - [CC0 1.0 Universal (CC0 1.0) Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - [Eiszapfen Foto](https://pixabay.com/de/photos/eiszapfen-schnee-bokeh-winter-3888363/) by krzysztofniewolny - [Pixabay License](https://pixabay.com/service/license/)
