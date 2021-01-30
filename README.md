@@ -8,7 +8,7 @@ As is it was initially made for school, please bear in mind that the primary lan
 [<img width="49%" src="images/website/website-charts.png" alt="Screenshot of the website which displays charts">](images/website/website-charts.png)
 
 ### Setup
-To find out what you need to run this project on your Raspberry Pi, consider taking a look on the setup page.
+To find out what you need to run this project on your Raspberry Pi, consider taking a look on the [setup page](documentation/setup.md).
 
 <img width="600px" src="images/device/device.jpg" alt="Design of the finished indoor air measuring device">
 
